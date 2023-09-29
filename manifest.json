@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "StackOverflow dark theme",
+  "version": "1.0",
+  "description": "StackOverflow dark theme without being logged in",
+  "permissions": [
+    "http://*.stackoverflow.com/*",
+    "https://*.stackoverflow.com/*",
+    "http://stackoverflow.com/*",
+    "https://stackoverflow.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.stackoverflow.com/*",
+        "https://*.stackoverflow.com/*",
+        "http://stackoverflow.com/*",
+        "https://stackoverflow.com/*"
+      ],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
