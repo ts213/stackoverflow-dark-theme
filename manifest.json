@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "StackOverflow dark theme",
-  "version": "2.0",
+  "version": "2.0.1",
   "description": "StackOverflow dark theme without being logged in",
   "permissions": [
     "http://stackoverflow.com/*",
@@ -13,6 +13,7 @@
         "http://*.stackoverflow.com/*",
         "https://*.stackoverflow.com/*"
       ],
+     "exclude_matches": ["https://meta.stackoverflow.com/*"],
       "css": ["style.css"],
       "run_at": "document_start"
     }
