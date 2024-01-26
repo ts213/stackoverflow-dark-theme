@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script defer src='opts.js'></script>
+  <style>
+    body {
+      height: 100vh;
+      background-color: #252627;
+      color: #d8d0d0;
+    }
+    label { cursor: pointer; }
+    sub {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+  </style>
+</head>
+<body>
+<header>StackOverflow settings:</header>
+<ul>
+  <li>
+    <label title='left and right panels on question page, thus widening question area width'>
+      Hide side panels
+      <input type='checkbox' id='isHideBars'>
+    </label>
+  </li>
+</ul>
+<sub id='reminder'>refresh any question page</sub>
+</body>
+</html>

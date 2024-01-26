@@ -1,12 +1,13 @@
 {
   "manifest_version": 2,
-  "name": "StackOverflow dark theme",
-  "version": "2.0.1",
-  "description": "StackOverflow dark theme without being logged in",
+  "name": "StackOverflow improvements addon",
+  "version": "2.2",
   "permissions": [
     "http://stackoverflow.com/*",
-    "https://stackoverflow.com/*"
+    "https://stackoverflow.com/*",
+    "storage"
   ],
+  "options_ui": { "page": "opts.html" },
   "content_scripts": [
     {
       "matches": [
@@ -14,6 +15,7 @@
         "https://*.stackoverflow.com/*"
       ],
      "exclude_matches": ["https://meta.stackoverflow.com/*"],
+      "js": ["j.js"],
       "css": ["style.css"],
       "run_at": "document_start"
     }
