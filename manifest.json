@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "StackOverflow improvements addon",
-  "version": "2.2",
+  "version": "2.3",
   "permissions": [
     "http://stackoverflow.com/*",
     "https://stackoverflow.com/*",

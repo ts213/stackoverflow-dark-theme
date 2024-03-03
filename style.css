@@ -1,3 +1,4 @@
+#signup-dialog-container { display: none; }
 body:not(.theme-highcontrast):not(.theme-dark) {
   --white: hsl(210, 3%, 15%);
   --black-050: hsl(210, 3%, 15%);
