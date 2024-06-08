@@ -8,7 +8,9 @@
       background-color: #252627;
       color: #d8d0d0;
     }
+    header { margin: 15px 0 0 0; }
     label { cursor: pointer; }
+    li { margin: 0 0 15px 0; }
     sub {
       opacity: 0;
       transition: opacity 1s ease;
@@ -16,14 +18,23 @@
   </style>
 </head>
 <body>
-<header>StackOverflow settings:</header>
-<ul>
+<header>Hide:</header>
+<ul id='optsWrap'>
+
   <li>
-    <label title='left and right panels on question page, thus widening question area width'>
-      Hide side panels
+    <label title='Left and right panels on question pages'>
+      side panels
       <input type='checkbox' id='isHideBars'>
     </label>
   </li>
+
+  <li>
+    <label title='Search header on top of question pages'>
+      header
+      <input type='checkbox' id='isRemoveHeader'>
+    </label>
+  </li>
+
 </ul>
 <sub id='reminder'>refresh any question page</sub>
 </body>
